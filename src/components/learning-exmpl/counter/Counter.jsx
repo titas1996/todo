@@ -14,12 +14,19 @@ class Counter extends Component{
         return(
             <div>
                 <h1>Titas is learning</h1>
-                <CounterBtn by={+2} incSpan = {this.increment}/>
-                <CounterBtn by = {+20} incSpan = {this.increment}/>
-                <CounterBtn by={+100} incSpan = {this.increment}/>
-                <CounterBtn by={-50} incSpan = {this.increment}/>
-                <CounterBtn by = {+30} incSpan = {this.increment}/>
-                <CounterBtn by={-100} incSpan = {this.increment}/>
+                <div className = "inlineDiv">
+                    <CounterBtn by={+2} incSpan = {this.increment}/>
+                    <CounterBtn by = {+20} incSpan = {this.increment}/>
+                </div>
+                
+                <div className = "inlineDiv">
+                    <CounterBtn by={+100} incSpan = {this.increment}/>
+                    <CounterBtn by={-50} incSpan = {this.increment}/>
+                </div>
+                <div className = "inlineDiv">
+                    <CounterBtn by = {+30} incSpan = {this.increment}/>
+                    <CounterBtn by={-100} incSpan = {this.increment}/>
+                </div>
                 <span className="Count">{this.state.counter}</span>
             </div>
         )
