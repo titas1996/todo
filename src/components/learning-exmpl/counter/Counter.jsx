@@ -52,8 +52,9 @@ class CounterBtn extends Component {
         )
     }
     increment() {
-        this.setState({
-            counter : this.state.counter + this.props.by
+        this.setState(
+            (btnPrevState) => {
+            return {counter : btnPrevState.counter + this.props.by}
         })
         this.props.incSpan(this.props.by);
     }
