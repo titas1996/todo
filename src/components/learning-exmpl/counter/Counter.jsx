@@ -13,6 +13,7 @@ class Counter extends Component{
     render() {
         return(
             <div>
+                <h1>Titas is learning</h1>
                 <CounterBtn by={+2} incSpan = {this.increment}/>
                 <CounterBtn by = {+20} incSpan = {this.increment}/>
                 <CounterBtn by={+100} incSpan = {this.increment}/>
